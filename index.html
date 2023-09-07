@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>group-to-do-list</title>
+    <!-- Links-->
+    <link rel="icon" href="./fav/todo-lofo.ico" type="image/x-icon" />
     <!--normalize css-->
     <link rel="stylesheet" href="./styles/normalize.css" />
     <!--fontawesome cdn-->
@@ -18,6 +20,45 @@
     <link rel="stylesheet" type="text/css" href="./styles/style.css" />
   </head>
   <body>
+    <div class="main-container">
+      <header class="nav">
+        <h2 class="name">To-Do List App</h2>
+      </header>
+      <!--hero-->
+      <div class="content-ctn">
+        <div class="small">
+          <form id="adding-task" class="first icon">
+            <input
+              id="title"
+              class="title"
+              type="text"
+              placeholder="write your task here..."
+            />
+            <div class="tasks-icon">
+              <i class="fa-solid fa-list-check"></i>
+              <button type="button" class="add" id="add">Add</button>
+            </div>
+          </form>
+        </div>
+        <br />
+        <!--btn-->
+        <div class="second-ctn">
+          <button id="tasks" class="tasks">clear all tasks</button>
+          <button id="clear-completed-task" class="completed-tasks">
+            Clear completed tasks
+          </button>
+        </div>
+        <!--ass-->
+        <div class="db-container" id="db-container">
+          <div class="db-one" id="db-one">
+            <p class="line-one">You have nothing task today!</p>
+            <p class="line-two">Enter your tasks today above.</p>
+          </div>
+        </div>
+      </div>
+
+      <!--main ctn below div-->
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
